@@ -39,20 +39,45 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Brand & palette from brief */
+    --brand-black: 0 0% 0%;
+    --brand-white: 0 0% 100%;
+    --brand-gray-medium: 240 5% 65%; /* #A1A1AA */
+    --brand-green-500: 142 71% 45%; /* #22C55E */
+    --brand-green-600: 142 76% 36%; /* #16A34A */
+    --chat-user: 94 79% 87%; /* #DCF8C6 */
+    --chat-bot: 0 0% 95%; /* #F1F1F1 */
+    --blue-hover: 205 86% 94%; /* #E3F2FD */
+    --brand-blue-600: 221 83% 53%; /* #2563EB */
+    --gray-50: 210 20% 98%; /* #F9FAFB */
+    --gray-100: 220 14% 96%; /* #F3F4F6 */
+    --gray-500: 220 9% 47%; /* #6B7280 */
+    --gray-600: 215 30% 34%; /* #4B5563 */
+    --gray-700: 217 22% 27%; /* #374151 */
+    --gray-800: 215 28% 17%; /* #1F2937 */
+    --brand-lovable-blue: 227 100% 65%; /* #4B73FF */
+    --brand-lovable-magenta: 304 100% 70%; /* #FF66F4 */
+    --brand-lovable-red: 359 100% 50%; /* #FF0105 */
+    --brand-lovable-orange: 29 99% 50%; /* #FE7B02 */
+    --brand-cream: 44 39% 98%; /* #FCFBF8 */
+
+    /* Gradients & shadows */
+    --gradient-hero: linear-gradient(135deg,
+      hsl(var(--brand-lovable-blue)) 0%,
+      hsl(var(--brand-lovable-magenta)) 35%,
+      hsl(var(--brand-lovable-orange)) 70%,
+      hsl(var(--brand-lovable-red)) 100%
+    );
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--brand-lovable-blue) / 0.35);
+    --shadow-glow: 0 0 40px hsl(var(--brand-lovable-magenta) / 0.35);
   }
 
   .dark {
@@ -102,4 +127,21 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Utilities */
+@layer utilities {
+  .bg-gradient-lovable {
+    background: var(--gradient-hero);
+  }
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 10s ease infinite;
+  }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

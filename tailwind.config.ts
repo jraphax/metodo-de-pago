@@ -61,6 +61,29 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// New brand palette based on the provided styles
+				brand: {
+					black: 'hsl(var(--brand-black))',
+					white: 'hsl(var(--brand-white))',
+					grayMedium: 'hsl(var(--brand-gray-medium))',
+					green500: 'hsl(var(--brand-green-500))',
+					green600: 'hsl(var(--brand-green-600))',
+					blue600: 'hsl(var(--brand-blue-600))',
+					lovableBlue: 'hsl(var(--brand-lovable-blue))',
+					lovableMagenta: 'hsl(var(--brand-lovable-magenta))',
+					lovableRed: 'hsl(var(--brand-lovable-red))',
+					lovableOrange: 'hsl(var(--brand-lovable-orange))',
+					cream: 'hsl(var(--brand-cream))',
+					chatUser: 'hsl(var(--chat-user))',
+					chatBot: 'hsl(var(--chat-bot))',
+					gray50: 'hsl(var(--gray-50))',
+					gray100: 'hsl(var(--gray-100))',
+					gray500: 'hsl(var(--gray-500))',
+					gray600: 'hsl(var(--gray-600))',
+					gray700: 'hsl(var(--gray-700))',
+					gray800: 'hsl(var(--gray-800))',
+					blueHover: 'hsl(var(--blue-hover))'
 				}
 			},
 			borderRadius: {
