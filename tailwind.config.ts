@@ -84,7 +84,8 @@ export default {
 					gray700: 'hsl(var(--gray-700))',
 					gray800: 'hsl(var(--gray-800))',
 					blueHover: 'hsl(var(--blue-hover))'
-			},
+				}, // end brand
+			}, // end colors
 			fontFamily: {
 				sans: ["Poppins", "ui-sans-serif", "system-ui", "sans-serif"],
 			},
